@@ -1,3 +1,4 @@
+#/bin/bash
 
 # Startup Script for installing Django and starting a new project.
 # Peter Byrne
