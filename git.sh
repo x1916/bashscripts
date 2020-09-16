@@ -1,3 +1,5 @@
+#/bin/bash
+
 # script to add everything in folder to github repository
 
 sudo git --version
@@ -7,7 +9,7 @@ sudo git remote -v
 
 #git remote add origin https://github.com/x1916/bashscripts
 
-read -r -p "Synchronise New Github Repository?" input
+read -r -p "Synchronise New Github Repository? (Y/n)?" input
 
 case $input in
 	[yY][eE][sS]|[yY])
