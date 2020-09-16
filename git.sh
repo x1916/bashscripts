@@ -9,7 +9,7 @@ sudo git remote -v
 
 #git remote add origin https://github.com/x1916/bashscripts
 
-read -r -p "Synchronise New Github Repository? (Y/n)?" input
+read -r -p "Synchronise New Github Repository? (y/N)?" input
 
 case $input in
 	[yY][eE][sS]|[yY])
