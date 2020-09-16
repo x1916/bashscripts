@@ -7,17 +7,39 @@ sudo git remote -v
 
 #git remote add origin https://github.com/x1916/bashscripts
 
-echo "Please enter Github URL:"
-read giturl
+read -r -p "Synchronise New Github Repository?" input
 
-git clone $giturl
+case $input in
+	[yY][eE][sS]|[yY])
 
-git remote add origin $giturl
+	echo "Please enter Github URL:"
+	read giturl
+
+	git clone $giturl
+
+	git remote add origin $giturl
+break
+;;
+	[nN][oO]|[nN])
+break
+;;
+	*)
+echo "Invalid input..."
+;;
+esac
+
+
+# Add all files from directory to repository.
 
 sudo git add *.*
+
+# Name the commits by Date / Time.
+
 timevalue=$(date)
 echo $timevalue
-sudo git commit -m "update $timevalue"
-#sudo git remote add bashscripts https://github.com/x1916/bashscripts.git
-#sudo git pull bashscripts master
-#sudo git push bashscripts master
+sudo git commit -m "Updated $timevalue"
+
+# Finalise the push pull to synchronise.
+
+sudo git pull origin master
+sudo git push origin master
