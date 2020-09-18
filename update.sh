@@ -1,3 +1,4 @@
+#!/bin/bash
 # update script
 sudo apt -y update
 sudo apt -y upgrade
