@@ -1,4 +1,4 @@
-#/bin/bash/
+#!/bin/bash
 #
 # display status of EC2
 #
