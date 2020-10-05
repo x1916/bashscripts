@@ -1,15 +1,22 @@
 # bashscripts
+
 Collection of Useful Bash Scripts
 
-update.sh         - Perform updates on AWS EC2 with pip and django updates.
+backup.sh		- Perform backup to zipped tarball. Can be used with crontab -e.
 
-django-setup.sh   - Setup a new Django project on an AWS EC2 instance.
+dbpermissions.sh	- Set permissions for Django DB and Apache.
 
-git.sh            - Clone a github repository, update and push it.
+django-setup.sh   	- Setup a new Django project on an AWS EC2 instance.
 
-gitscript.sh      - Setup a local github repository.
+frostwire.sh		- Parse out entries in a H2 Frostwire logfile.
 
-status.sh         - Show the status of an AWS EC2 instance, including Apache services.
+git.sh            	- Clone a github repository, update and push it.
 
-wagtail.sh        - Script to setup wagtail blog.
+gitscript.sh      	- Setup a local github repository.
+
+status.sh         	- Show the status of an AWS EC2 instance, including Apache services.
+
+update.sh               - Perform updates on AWS EC2 with pip and django updates.
+
+wagtail.sh        	- Script to setup wagtail blog.
 
