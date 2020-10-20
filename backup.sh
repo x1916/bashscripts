@@ -26,7 +26,8 @@ echo "Invalid input..."
 esac
 fi
 
-sudo tar -cvpzf $(date -I)-backup.tar.gz --exclude=/*-backup.tar.gz --one-file-system / 
+sudo mkdir backup
+sudo tar -cvpzf backup/$(date -I)-backup.tar.gz --exclude=backup/*-backup.tar.gz --one-file-system / 
 
 find backup/ -type f -iname "*-backup.tar.gz" -mtime +5 -delete
 
