@@ -3,8 +3,8 @@
 # script to add everything in folder to github repository
 
 sudo git --version
-sudo git config --global user.name "x1916"
-sudo git config --global user.email "x19164131@student.ncirl.ie"
+sudo git config --global --rebase user.name "x1916"
+sudo git config --global --rebase user.email "x19164131@student.ncirl.ie"
 sudo git remote -v
 
 #git remote add origin https://github.com/x1916/bashscripts
